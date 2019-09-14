@@ -1,3 +1,5 @@
+// create a variable to store results as an array
+
 function largestOfFour(arr) {
   var results = [];
   for (var n = 0; n < arr.length; n++) {
