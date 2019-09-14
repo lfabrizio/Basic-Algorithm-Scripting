@@ -1,4 +1,6 @@
 // create a variable to store results as an array
+// create an outer loop 
+// create a second variable to store the largest number 
 
 function largestOfFour(arr) {
   var results = [];
