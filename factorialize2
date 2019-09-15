@@ -1,0 +1,11 @@
+function factorialize(n) {
+  
+  if (n === 0) {
+    return 1;
+  }
+  var factor = n * factorialize(n - 1);
+  
+  return factor;
+}
+
+factorialize(5);
