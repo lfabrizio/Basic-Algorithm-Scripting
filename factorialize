@@ -1,0 +1,21 @@
+// factorialize non-recursion
+
+function factorialize(num) {
+  // create an empty array 
+  // for loop to iterate through each number decrementing
+  // push each number to the empty array
+  // multiply
+  var factor = 1;
+  var arr = [];
+
+  for(var i = num; i > 0; i--) {
+    arr.push(i);
+    factor=factor*i;
+  }
+  console.log(arr);
+  console.log(factor);
+  return factor;
+ 
+  }
+
+factorialize(5);
