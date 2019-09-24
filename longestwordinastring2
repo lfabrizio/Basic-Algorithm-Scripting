@@ -1,8 +1,10 @@
 function findLongestWordLength(str) {
   var words = str.split(" ");
    // now have an array of words
-   // empty variable to store longest word 
+
+   // empty variable to store longest word set to zero 
   var maxLength = 0;
+  // for loop with words[i] = to maxlength only if longer index
   for (var i = 0; i < words.length; i++) {
   if(words[i].length > maxLength) {
     maxLength = words[i].length;
