@@ -1,14 +1,11 @@
-// factorialize non-recursion
-// refactored
-// non-recursion 
 function factorialize(num) {
-   // create an empty array 
-   var arr = [];
-  var factor = 1;
-// for loop to iterate through each number decrementing
-for(var i = num; i > 0; i--){
-  arr.push(i);  // push each number to the empty array
-  factor=factor*i;  // multiply
+  // non-recursion 
+  var factor = 1; // counter
+  var arr = []; // empty array to store
+// for loop to iterate the function input 
+for(var i = num; i > 0; i--) {
+  arr.push[i]; // push each number to empty array
+      factor = factor * i; // lastly multiplication
 }
 
   return factor;
