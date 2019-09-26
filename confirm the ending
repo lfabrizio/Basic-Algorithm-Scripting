@@ -1,9 +1,14 @@
-// confirm the ending
+// confirm the ending REFACTORED
 
 function confirmEnding(str, target) {
-if(str.substr(-target.length) === target){
-  return true;
+  // through subtraction find out the difference between str length and target length
+  // order of operations!
+  // then slice off the difference between str and target
+  //then ask if the remainder of str is equal to target to "confirm the ending" 
+
+return str.slice(str.length - target.length) === target;
 }
-return false;
-}
+
 confirmEnding("Bastian", "n");
+
+
