@@ -1,0 +1,13 @@
+function booWho(bool) {
+  // What is the new fad diet for ghost developers? The Boolean.
+// boolean to check if T or F
+//the type of operator will tell you if the input is a bool, num, string, etc.
+// find out if input is equal === to a boolean 
+// should be false 
+// if bool was true or false, then it would be true 
+
+  return typeof bool === 'boolean';
+  
+}
+
+booWho(null);
