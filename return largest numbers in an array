@@ -1,19 +1,16 @@
-// create a variable to store results as an array
-// create an outer loop 
-// create a second variable to store the largest number 
-
 function largestOfFour(arr) {
+  // You can do this!
+  // create a variable to store results as an array
   var results = [];
-  for (var n = 0; n < arr.length; n++) {
-    var largestNumber = arr[n][0];
-    for (var sb = 1; sb < arr[n].length; sb++) {
-      if (arr[n][sb] > largestNumber) {
-        largestNumber = arr[n][sb];
+// nested for loop 
+for(var i = 0; i < arr.length; i++){
+    var largestNumber = arr[i][0]; // to store largest number 
+    for (var j = 1; j < arr[i].length; j++) { // iterate through subarray
+      if (arr[i][j] > largestNumber) {
+        largestNumber = arr[i][j];
       }
     }
-
-    results[n] = largestNumber;
+    results[i] = largestNumber;
   }
-
   return results;
 }
