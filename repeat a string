@@ -1,6 +1,6 @@
 function repeatStringNumTimes(str, num) {
   // repeat after me
-  // empty variable to store
+  // create a variable to store new string
   var repeat = "";
   // while loop to rpeart as many times as num input asks
   while(num > 0){
