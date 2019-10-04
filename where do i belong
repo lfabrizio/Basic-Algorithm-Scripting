@@ -1,13 +1,13 @@
-// where d i belong
 function getIndexToIns(arr, num) {
-  arr.sort(function(a, b) {
-    return a - b;
-  });
-
-  for (var a = 0; a < arr.length; a++) {
-    if (arr[a] >= num)
-      return a;
-  }
-
-  return arr.length;
+  // Find my place in this sorted array.
+  var times = arr.length; // runs the for loop once for each in the array
+  var count = 0;
+  for (var i = 0; i < times; i++) {
+    if (num > arr[i]) {
+      count++;
+    }
+  } // counts how many array numbers are smaller than num
+  return count; // the above equals num's position in a sorted array
 }
+// for loop counting whenever the num input is bigger than an arr input number.
+// This number is equivalent to what num’s position would be in a sorted array.
