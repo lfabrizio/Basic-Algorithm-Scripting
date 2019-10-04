@@ -1,19 +1,17 @@
-    function chunkArrayInGroups(arr, size) {
 
-      var temp = [];
-      var result = [];
+ function chunkArrayInGroups(arr, size) {
+  var newArr = [];
+  while (arr.length) {
+    newArr.push(arr.splice(0, size));
+    console.log(newArr)
+  }
+  return newArr;
+}
 
-      for (var a = 0; a < arr.length; a++) {
-        if (a % size !== size - 1)
-          temp.push(arr[a]);
-        else {
-          temp.push(arr[a]);
-          result.push(temp);
-          temp = [];
-        }
-      }
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
 
-      if (temp.length !== 0)
-        result.push(temp);
-      return result;
-    }
+// create a variable. newArr is an empty array which we will push to.
+// Our while loop loops until the length of the array in our test is not 0.
+// Inside the loop, push to the newArr array using arr.splice(0, size).
+// For each iteration of while loop, it deletes size number of elements from the front of arr and push them as an array to newArr.
+// return value
