@@ -1,14 +1,13 @@
-// mutations
-
 function mutation(arr) {
-  var target = arr[0].toLowerCase();
-  var test = arr[1].toLowerCase();
-  
-  for (var i=0;i<test.length;i++) {
-    if (target.indexOf(test[i]) < 0)
-      return false;
+  var mute1 = arr[1].toLowerCase();
+  var mute2 = arr[0].toLowerCase();
+  for (var i = 0; i < mute1.length; i++) {
+    if (mute2.indexOf(mute1[i]) < 0) return false;
   }
   return true;
- }
-//we loop through our test characters and if any of them is not found we return false.
-// If all found, the loop will finish without returning anything and return true.
+}
+mutation(["hello", "hey"]);
+
+// made two strings in the array lowercase. mute2 will hold what we are looking for in mute2.
+// loop through our test characters and if any of them is not found we return false.
+// If they are all found, the loop will finish without returning anything and we get to return true.
