@@ -1,20 +1,8 @@
+// refactored!
+
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
-  // Falsy is something which evaluates to FALSE. There are only six falsy values in JavaScript: undefined, null, NaN, 0, “” (empty string), and false of course.
-  //maybe add a filter
-    let notfalsy = [];
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i]) notfalsy.push(arr[i]);
-    console.log(notfalsy)
-  }
-  return notfalsy;
+  return arr.filter(Boolean);
 }
 
-
 bouncer([7, "ate", "", false, 9]);
-
-// created a new empty array.
-// use a loop to iterate over all elements of the array (arr).
-// use the if statement to check if the current element is truthy 567 or falsy 2.
-// the element is truthy, we push it to the new array . This result in the new array (newArray) containing only truthy elements.
-// return the array 
