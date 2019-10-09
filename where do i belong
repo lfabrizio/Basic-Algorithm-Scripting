@@ -1,13 +1,18 @@
+// refactored
+
 function getIndexToIns(arr, num) {
   // Find my place in this sorted array.
-  var times = arr.length; // runs the for loop once for each in the array
   var count = 0;
-  for (var i = 0; i < times; i++) {
-    if (num > arr[i]) {
-      count++;
-    }
-  } // counts how many array numbers are smaller than num
-  return count; // the above equals num's position in a sorted array
+
+  for(var i = 0; i < arr.length;i++){
+    if(num > arr[i])
+    count++;
+  }
+
+  return count;
 }
+
+getIndexToIns([40, 60], 50);
+
 // for loop counting whenever the num input is bigger than an arr input number.
 // This number is equivalent to what num’s position would be in a sorted array.
