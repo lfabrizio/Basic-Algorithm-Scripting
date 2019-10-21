@@ -1,6 +1,19 @@
-//white board challenge
+// T-7.21
 
 // set varibale all letters to lowercase and split the string
 // use uppercase for index 0 to capitalize first letters
 // use slice for index 1 on
-// 
+
+
+function titleCase(str) {
+  var title = str.toLowerCase().split(" ");
+
+  console.log(title);
+
+  for(var i = 0; i < title.length; i++){
+    title[i] = title[i][0].toUpperCase() + title[i].slice(1);
+  }
+  return title.join(" ");
+}
+
+titleCase("I'm a little tea pot");
