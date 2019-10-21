@@ -8,7 +8,7 @@ function getIndexToIns(arr, num) {
     if(num > arr[i])
     count++;
   }
-
+// counts how many array numbers are smaller than num
   return count;
 }
 
