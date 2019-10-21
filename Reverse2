@@ -1,0 +1,8 @@
+function reverseString(str) {
+  var split1 = str.split("");
+  var r = split1.reverse();
+  var finish = r.join("");
+  return finish;
+}
+//t=  55.98 sec
+reverseString("hello");
